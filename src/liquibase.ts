@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // import { join } from 'path';
 import { CommandHandler, FileHelper } from './util';
-import { POSTGRESQL_DEFAULT_CONFIG } from './constants/defaults/postgresql-default.config';
+import { MYSQL_DEFAULT_CONFIG } from './constants/defaults/mysql-default.config';
 import { LiquibaseCommands } from './enums/liquibase-commands.enum';
 import {
   LiquibaseConfig,
@@ -773,7 +773,7 @@ export class Liquibase {
    */
   private mergeConfigWithDefaults(config: LiquibaseConfig) {
     const defaults: LiquibaseConfig = {
-      ...POSTGRESQL_DEFAULT_CONFIG,
+      ...MYSQL_DEFAULT_CONFIG,
       liquibase: FileHelper.bundledLiquibasePath,
     };
     this.config = Object.assign({}, defaults, config);

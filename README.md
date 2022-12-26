@@ -108,12 +108,12 @@ node-liquibase /Users/me/path/to/my/executable/for/liquibase
 import {
 	LiquibaseConfig,
 	Liquibase,
-	POSTGRESQL_DEFAULT_CONFIG,
+	MYSQL_DEFAULT_CONFIG, 
 } from 'liquibase';
 
 const myConfig: LiquibaseConfig = {
-	...POSTGRESQL_DEFAULT_CONFIG,
-	url: 'jdbc:postgresql://localhost:5432/node_liquibase_testing',
+	...MYSQL_DEFAULT_CONFIG,
+	url: 'jdbc:mysql://localhost:3306/node_liquibase_testing',
 	username: 'yourusername',
 	password: 'yoursecurepassword',
 };

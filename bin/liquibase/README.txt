@@ -34,7 +34,7 @@ Files are:
 	* liquibase/LICENSE.txt
 	* liquibase/liquibase.sh
 	* liquibase/liquibase.bat
-	* liquibase/liquibase-core-4.18.0.jar
+	* liquibase/liquibase.jar
 	* liquibase/README.txt
 	* liquibase/GETTING_STARTED.txt
 	* liquibase/examples/start-h2
