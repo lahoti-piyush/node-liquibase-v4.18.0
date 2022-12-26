@@ -6,7 +6,7 @@ setlocal enabledelayedexpansion
 rem %~dp0 is expanded pathname of the current script under NT
 rem %~p0 is the directory of the current script
 
-if exist %~p0\..\liquibase.jar SET LIQUIBASE_HOME="%~p0\.."
+if exist %~p0\..\liquibase-core-4.18.0.jar SET LIQUIBASE_HOME="%~p0\.."
 
 if "%LIQUIBASE_HOME%"=="" (
     FOR /F "tokens=* USEBACKQ" %%g IN (`where liquibase.bat`) do (SET "LIQUIBASE_HOME=%%~dpg")
@@ -31,4 +31,4 @@ if "%JAVA_HOME%"=="" (
     set JAVA_PATH=%JAVA_HOME%\bin\java
 )
 
-"%JAVA_PATH%" -cp "%LIQUIBASE_HOME%\lib\h2-1.4.200.jar;%LIQUIBASE_HOME%\liquibase.jar" liquibase.example.StartH2Main
+"%JAVA_PATH%" -cp "%LIQUIBASE_HOME%\lib\h2-1.4.200.jar;%LIQUIBASE_HOME%\liquibase-core-4.18.0.jar" liquibase.example.StartH2Main

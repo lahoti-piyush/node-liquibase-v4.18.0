@@ -1112,7 +1112,7 @@ Changes in version 3.2.3 (2014.11.03)
 - [CORE-1989] - Cannot set objectQuotingStrategy on root databaseChangeLog node
 - [CORE-2002] - AbstractResourceAccessor generates path in a unpredictable way
 - [CORE-2003] - Could not find implementation of liquibase.logging.Logger
-- [CORE-2042] - If liquibase.jar is nested in another jar/war/ear, it fails to start with a 'cannot find implementation of liquibase.logging.Logger' error
+- [CORE-2042] - If liquibase-core-4.18.0.jar is nested in another jar/war/ear, it fails to start with a 'cannot find implementation of liquibase.logging.Logger' error
 - [CORE-2058] - Load/Update tags should use 'is null' not '= null' for null comparisons
 - [CORE-2070] - dropAllForeignKeyConstraints does not work on Firebird databases
 - [CORE-2075] - generateChangelog generates bad definition for TIME type
